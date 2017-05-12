@@ -62,28 +62,7 @@ public class ParagraphVectorsTextExample {
 		//double similarity3 = vec.similarity("DOC_3", "DOC_4");
 		//log.info("6348/3721 ('This is my case .'/'This is my way .') similarity: " + similarity3);
 
-		// likelihood in this case should be significantly lower
-		//double similarityX = vec.similarity("DOC_6", "DOC_7");
-		//log.info("3721/9853 ('This is my way .'/'We now have one .') similarity: " + similarityX +
-				//"(should be significantly lower)");
 		
-		/*
-		for (String word : p) {
-			//double similarity1 = vec.similarity("racismo", word);
-			//log.info("9835/palavra ('O racismo é um câncer social .'/'" +word +".)" +"similarity: " + similarity1);
-					
-			double similarity2 = vec.similarity("DOC_3720", "DOC_16392");
-			log.info("3721/16393 ('This is my way .'/'This is my work .') similarity: " + similarity2);
-
-			double similarity3 = vec.similarity("DOC_6347", "DOC_3720");
-			log.info("6348/3721 ('This is my case .'/'This is my way .') similarity: " + similarity3);
-
-			// likelihood in this case should be significantly lower
-			double similarityX = vec.similarity("DOC_3720", "DOC_9852");
-			log.info("3721/9853 ('This is my way .'/'We now have one .') similarity: " + similarityX +
-					"(should be significantly lower)");
-		}
 		
-		*/
 	}
 }
