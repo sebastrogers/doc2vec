@@ -15,14 +15,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 /**
- * This is example code for dl4j ParagraphVectors implementation. In this example we build distributed representation of all sentences present in training corpus.
- * However, you still use it for training on labelled documents, using sets of LabelledDocument and LabelAwareIterator implementation.
- *
- * *************************************************************************************************
- * PLEASE NOTE: THIS EXAMPLE REQUIRES DL4J/ND4J VERSIONS >= rc3.8 TO COMPILE SUCCESSFULLY
- * *************************************************************************************************
- *
- * @author raver119@gmail.com
+ * @author sebastiao
  */
 public class ParagraphVectorsTextExample {
 
