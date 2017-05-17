@@ -22,7 +22,7 @@ public class ParagraphVectorsTextExample {
 	private static final Logger log = LoggerFactory.getLogger(ParagraphVectorsTextExample.class);
 
 	public static void main(String[] args) throws Exception {
-		ClassPathResource resource = new ClassPathResource("\\PreconceitoConvertido.txt");
+		ClassPathResource resource = new ClassPathResource("\\PreconceitoStopwords.txt");
 		File file = resource.getFile();
 		SentenceIterator iter = new BasicLineIterator(file);
 
@@ -40,7 +40,7 @@ public class ParagraphVectorsTextExample {
 
 		ParagraphVectors vec = new ParagraphVectors.Builder()
 				.minWordFrequency(1)
-				.iterations(5)
+				.iterations(20)
 				.epochs(1)
 				.layerSize(100)
 				.learningRate(0.025)
@@ -56,8 +56,8 @@ public class ParagraphVectorsTextExample {
 		vec.fit();
 
 			
-		double similarity2 = vec.similarity("DOC_1", "DOC_6780");
-		log.info("3721/16393 ('sentença 1 .'/'decepcionado .') similarity: " + similarity2);
+		double similarity1 = vec.similarity("DOC_7", "DOC_6603");
+		log.info("7/6603 ('sentença 8 .'/'preocupado .') similarity: " + similarity1);
 
 		//double similarity3 = vec.similarity("DOC_3", "DOC_4");
 		//log.info("6348/3721 ('This is my case .'/'This is my way .') similarity: " + similarity3);
